@@ -1,10 +1,44 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
+import projects from "./data"; // Proje verilerini içe aktar
 
 const Portfolio = () => {
+  const [darkMode, setDarkMode] = useState(() => {
+    // Kullanıcı tercihlerini kontrol et
+    if (typeof window !== "undefined") {
+      return localStorage.getItem("darkMode") === "true";
+    }
+    return false; // varsayılan olarak karanlık mod kapalı
+  });
+
+  // Dark mode'u açma/kapama
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    localStorage.setItem("darkMode", !darkMode);
+  };
+
+  // <html> öğesi için dark mode sınıfını uygula
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [darkMode]);
+
   return (
-    <div className="bg-gray-100 text-gray-800">
+    <div
+      className={`${
+        darkMode ? "bg-gray-900 text-gray-100" : "bg-gray-100 text-gray-800"
+      }`}
+    >
       {/* Navbar */}
-      <header className="bg-white shadow sticky top-0 z-50">
+      <header
+        className={`sticky top-0 z-50 ${
+          darkMode ? "bg-gray-800" : "bg-white"
+        } shadow`}
+      >
         <div className="container mx-auto flex justify-between items-center py-4 px-6">
           <h1 className="text-xl font-bold">Freelance Developer</h1>
           <nav>
@@ -36,6 +70,13 @@ const Portfolio = () => {
               </li>
             </ul>
           </nav>
+          {/* Dark Mode Toggle */}
+          <button
+            onClick={toggleDarkMode}
+            className="ml-4 p-2 rounded border hover:bg-gray-200 dark:hover:bg-gray-700"
+          >
+            {darkMode ? "Light Mode" : "Dark Mode"}
+          </button>
         </div>
       </header>
 
@@ -68,40 +109,32 @@ const Portfolio = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="bg-gray-200 py-16">
+      <section
+        id="projects"
+        className={`py-16 ${darkMode ? "bg-gray-800" : "bg-gray-200"}`}
+      >
         <div className="container mx-auto text-center">
           <h3 className="text-3xl font-bold">Projects</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-            <div className="bg-white shadow-md p-4">
-              <h4 className="text-xl font-semibold">E-commerce Admin Panel</h4>
-              <p className="mt-2 text-gray-600">
-                Developed with .NET and React, featuring user management and
-                order tracking.
-              </p>
-              <a href="#" className="text-blue-500 hover:underline mt-4 block">
-                View Demo
-              </a>
-            </div>
-            <div className="bg-white shadow-md p-4">
-              <h4 className="text-xl font-semibold">Interactive Portfolio</h4>
-              <p className="mt-2 text-gray-600">
-                Built with Next.js and TailwindCSS, showcasing modern design
-                principles.
-              </p>
-              <a href="#" className="text-blue-500 hover:underline mt-4 block">
-                View Demo
-              </a>
-            </div>
-            <div className="bg-white shadow-md p-4">
-              <h4 className="text-xl font-semibold">Custom Dashboard</h4>
-              <p className="mt-2 text-gray-600">
-                Fully responsive dashboard with dynamic charts and API
-                integrations.
-              </p>
-              <a href="#" className="text-blue-500 hover:underline mt-4 block">
-                View Demo
-              </a>
-            </div>
+            {projects.map((project, index) => (
+              <div
+                key={index}
+                className={`shadow-md p-4 ${
+                  darkMode
+                    ? "bg-gray-700 text-gray-100"
+                    : "bg-white text-gray-800"
+                }`}
+              >
+                <h4 className="text-xl font-semibold">{project.title}</h4>
+                <p className="mt-2">{project.description}</p>
+                <a
+                  href={`/projects/${project.id}`}
+                  className="text-blue-500 hover:underline mt-4 block"
+                >
+                  View Details
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -111,14 +144,26 @@ const Portfolio = () => {
         <div className="container mx-auto text-center">
           <h3 className="text-3xl font-bold">Services</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-            <div className="p-6 bg-white shadow-md">
+            <div
+              className={`p-6 shadow-md ${
+                darkMode
+                  ? "bg-gray-700 text-gray-100"
+                  : "bg-white text-gray-800"
+              }`}
+            >
               <h4 className="text-xl font-semibold">Responsive Web Design</h4>
               <p className="mt-2">
                 Creating modern, mobile-friendly websites that look great on any
                 device.
               </p>
             </div>
-            <div className="p-6 bg-white shadow-md">
+            <div
+              className={`p-6 shadow-md ${
+                darkMode
+                  ? "bg-gray-700 text-gray-100"
+                  : "bg-white text-gray-800"
+              }`}
+            >
               <h4 className="text-xl font-semibold">
                 React/Next.js Development
               </h4>
@@ -127,7 +172,13 @@ const Portfolio = () => {
                 tailored to your needs.
               </p>
             </div>
-            <div className="p-6 bg-white shadow-md">
+            <div
+              className={`p-6 shadow-md ${
+                darkMode
+                  ? "bg-gray-700 text-gray-100"
+                  : "bg-white text-gray-800"
+              }`}
+            >
               <h4 className="text-xl font-semibold">
                 Admin Panel Customization
               </h4>
@@ -172,7 +223,11 @@ const Portfolio = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-gray-400 py-6">
+      <footer
+        className={`${
+          darkMode ? "bg-gray-800 text-gray-400" : "bg-gray-900 text-gray-400"
+        } py-6`}
+      >
         <div className="container mx-auto text-center">
           <p>&copy; 2024 Freelance Developer. All rights reserved.</p>
         </div>
