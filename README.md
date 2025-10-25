@@ -40,3 +40,25 @@ npm run lint   # lint
 ## Notlar
 - ESLint uyarısı (Next.js plugin autodetect) biliniyor; mevcut yapı ile `npm run lint` hatasız çalışır.
 - Yeni proje eklemek için `src/app/data.js` içindeki `projects` listesine öğe ekleyin ve benzersiz `slug` verin.
+
+## Görseller (Örnek Ekranlar)
+
+- Anasayfa — Hero ve Availability
+
+  ![Anasayfa — Hero](public/portfolio-1.png)
+
+- Hizmetler ve Yetenekler (Services & Skills)
+
+  ![Services & Skills](public/portfolio-3.png)
+
+- Görüşler ve İletişim CTA (Testimonials + Contact call-to-action)
+
+  ![Testimonials & Contact CTA](public/portfolio-4.png)
+
+- İletişim Sayfası
+
+  ![Contact Page](public/portfolio-0.png)
+
+- Proje Detayı — Case Study: Commerce Intelligence Suite
+
+  ![Case Study - Commerce Intelligence Suite](public/portfolio-5.png)
