@@ -15,7 +15,8 @@ export function ServicesSection() {
           Strategy, systems, and shipping under one roof
         </h2>
         <p className="mx-auto max-w-2xl text-pretty text-[--muted]">
-          Every engagement blends discovery, design, and engineering to deliver measurable outcomes with a calm, collaborative rhythm.
+          Every engagement blends discovery, design, and engineering to deliver measurable outcomes with a calm,
+          collaborative rhythm.
         </p>
       </div>
       <div className="grid gap-6 lg:grid-cols-3">
@@ -42,7 +43,7 @@ export function ServicesSection() {
                 </ul>
               </div>
               <div className="mt-6 rounded-2xl bg-[--surface-muted] px-4 py-3 text-xs uppercase tracking-[0.3em] text-[--muted]">
-                Tailored playbooks · Weekly demos · Shared documentation
+                Tailored playbooks | Weekly demos | Shared documentation
               </div>
             </article>
           );

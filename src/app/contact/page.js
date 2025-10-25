@@ -15,7 +15,7 @@ const channelIcons = {
 };
 
 export const metadata = {
-  title: "Contact | Ayşe Kaya",
+  title: "Contact | Ayse Kaya",
   description:
     "Start a conversation about your next product milestone and receive a tailored collaboration plan within 24 hours.",
 };
@@ -28,17 +28,17 @@ export default function ContactPage() {
           href="/"
           className="inline-flex items-center gap-2 rounded-full border border-[--accent-soft] px-4 py-2 text-sm font-semibold text-[--muted] transition hover:border-[--accent] hover:text-[--foreground]"
         >
-          ← Back to home
+          Back to home
         </Link>
         <header className="mt-12 space-y-6 text-pretty">
           <span className="inline-flex items-center gap-2 rounded-full bg-[--accent-soft]/50 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-[--muted]">
-            Let’s work together
+            Let's work together
           </span>
           <h1 className="text-4xl font-semibold leading-tight text-[var(--foreground)] sm:text-5xl">
-            Share your product vision and let’s map the path to launch.
+            Share your product vision and let's map the path to launch.
           </h1>
           <p className="max-w-3xl text-lg text-[--muted]">
-            Tell me about your goals, team, and timeline. You’ll receive a curated response within 24 hours with recommended next steps and investment ranges.
+            Tell me about your goals, team, and timeline. You'll receive a curated response within 24 hours with recommended next steps and investment ranges.
           </p>
         </header>
         <div className="mt-16 grid gap-8 lg:grid-cols-[minmax(0,1fr)_320px]">
@@ -50,7 +50,7 @@ export default function ContactPage() {
                 <input
                   type="text"
                   name="name"
-                  placeholder="Ayşe Kaya"
+                  placeholder="Ayse Kaya"
                   className="w-full rounded-2xl border border-[--accent-soft]/70 bg-[--surface-muted] px-4 py-3 text-[var(--foreground)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[--ring]"
                   required
                 />

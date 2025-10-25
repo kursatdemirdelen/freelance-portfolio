@@ -1,4 +1,4 @@
-export const heroMetrics = [
+﻿export const heroMetrics = [
   {
     label: "Projects shipped",
     value: "28+",
@@ -22,7 +22,7 @@ export const heroMetrics = [
 export const services = [
   {
     title: "Product Discovery & Strategy",
-    icon: "🧭",
+    icon: "Compass",
     description:
       "Align business goals with user outcomes through roadmapping, prototyping, and measurable success metrics.",
     bullets: [
@@ -33,7 +33,7 @@ export const services = [
   },
   {
     title: "Interface Engineering",
-    icon: "🎨",
+    icon: "Layers",
     description:
       "Craft resilient design systems and accessible user interfaces that feel fast on every device.",
     bullets: [
@@ -44,7 +44,7 @@ export const services = [
   },
   {
     title: "Application Acceleration",
-    icon: "⚡",
+    icon: "Zap",
     description:
       "Upgrade legacy frontends, integrate analytics, and automate workflows with modern web tooling.",
     bullets: [
@@ -84,7 +84,7 @@ export const skills = [
 
 export const experiences = [
   {
-    period: "2022 — Present",
+    period: "2022 - Present",
     company: "Atlas Labs",
     role: "Senior Frontend Consultant",
     achievements: [
@@ -94,7 +94,7 @@ export const experiences = [
     stack: ["Next.js", "TypeScript", "Supabase", "Playwright"],
   },
   {
-    period: "2020 — 2022",
+    period: "2020 - 2022",
     company: "Northwind Studio",
     role: "Product Engineer",
     achievements: [
@@ -104,7 +104,7 @@ export const experiences = [
     stack: ["React", "Node.js", "Contentful", "Tailwind CSS"],
   },
   {
-    period: "2018 — 2020",
+    period: "2018 - 2020",
     company: "Freelance",
     role: "Full-stack Developer",
     achievements: [
@@ -118,28 +118,28 @@ export const experiences = [
 export const process = [
   {
     title: "Discover",
-    icon: "🔍",
+    icon: "Sparkles",
     duration: "Week 1",
     description:
       "Uncover goals, map success metrics, and align stakeholders through structured workshops.",
   },
   {
     title: "Design",
-    icon: "✏️",
+    icon: "PenTool",
     duration: "Weeks 2-3",
     description:
       "Prototype flows, define UI tokens, and validate with users before committing to build.",
   },
   {
     title: "Build",
-    icon: "🛠️",
+    icon: "Workflow",
     duration: "Weeks 3-6",
     description:
-      "Ship production-ready components, integrate data, and set up testing + observability.",
+      "Ship production-ready components, integrate data, and set up testing plus observability.",
   },
   {
     title: "Launch & Iterate",
-    icon: "🚀",
+    icon: "Gauge",
     duration: "Week 6+",
     description:
       "Deploy confidently, capture insights, and prioritize the next iteration with live analytics.",
@@ -149,7 +149,7 @@ export const process = [
 export const testimonials = [
   {
     quote:
-      "Working with Ayşe felt like gaining an internal product team. She translates fuzzy vision into a roadmap, prototypes in days, and delivers polished experiences that our customers love.",
+      "Working with Ayse felt like gaining an internal product team. She translates fuzzy vision into a roadmap, prototypes in days, and delivers polished experiences that our customers love.",
     name: "Leyla Karaca",
     title: "VP of Product",
     company: "FinEdge",
@@ -165,7 +165,7 @@ export const testimonials = [
   },
   {
     quote:
-      "From design system to deployment, the process was transparent and collaborative. We’re still using the same components across three new initiatives.",
+      "From design system to deployment, the process was transparent and collaborative. We are still using the same components across three new initiatives.",
     name: "Selin Kaya",
     title: "Head of Design",
     company: "Atlas Labs",
@@ -190,7 +190,7 @@ export const projects = [
       "FinEdge needed a single source of truth for revenue, retention, and campaign performance. I partnered with the data and product teams to design and build a modular analytics suite that keeps leadership aligned in real time.",
     category: "SaaS Platforms",
     featured: true,
-    timeline: "2024 • 8 weeks",
+    timeline: "2024 | 8 weeks",
     role: "Lead Frontend Engineer",
     metrics: [
       { label: "Conversion lift", value: "40%" },
@@ -206,7 +206,7 @@ export const projects = [
     ],
     results: [
       "Tripled self-serve reporting usage within the first month after launch.",
-      "Established a design system that now powers 4 additional internal tools.",
+      "Established a design system that now powers four additional internal tools.",
       "Enabled revenue teams to ship weekly experiments with automated QA checks.",
     ],
     deliverables: [
@@ -224,7 +224,8 @@ export const projects = [
     description:
       "Northwind Studio wanted to relaunch their brand with a multi-market site that felt bespoke yet scalable. I delivered a composable marketing platform with an editorial workflow and real-time previewing.",
     category: "Marketing Sites",
-    timeline: "2023 • 6 weeks",
+    featured: false,
+    timeline: "2023 | 6 weeks",
     role: "Product Engineer",
     metrics: [
       { label: "Leads generated", value: "+62%" },
@@ -240,8 +241,8 @@ export const projects = [
     ],
     results: [
       "Generated 62% more qualified leads within the first quarter.",
-      "Reduced build & deploy time from 15 minutes to under 3 minutes.",
-      "Enabled marketing to launch 4 regional campaigns simultaneously.",
+      "Reduced build and deploy time from 15 minutes to under 3 minutes.",
+      "Enabled marketing to launch four regional campaigns simultaneously.",
     ],
     deliverables: ["Component-driven CMS", "Localization workflow", "Performance audit"],
   },
@@ -253,7 +254,8 @@ export const projects = [
     description:
       "Atlas Labs required a resilient control center to coordinate their hardware deployments. I collaborated with operations leads to deliver a dashboard that scales with new product lines.",
     category: "Internal Tools",
-    timeline: "2022 • 5 weeks",
+    featured: false,
+    timeline: "2022 | 5 weeks",
     role: "Senior Frontend Consultant",
     metrics: [
       { label: "Incidents resolved", value: "-47%" },
@@ -280,5 +282,53 @@ export const availability = {
   status: "Accepting new client projects",
   nextAvailability: "Project kickoff openings from April 2025",
   responseTime: "Replies within 24 hours",
-  location: "Based in Istanbul • Remote friendly",
+  location: "Based in Istanbul | Remote friendly",
 };
+
+export const contactChannels = [
+  {
+    label: "Email",
+    value: "hello@aysekaya.dev",
+    description: "Share context or attach a deck anytime.",
+    icon: "Mail",
+    href: "mailto:hello@aysekaya.dev",
+  },
+  {
+    label: "Intro call",
+    value: "Book 30 min on Cal.com",
+    description: "Collaborate on scope and timelines live.",
+    icon: "CalendarClock",
+    href: "https://cal.com/ayse/build",
+  },
+  {
+    label: "Direct line",
+    value: "+90 532 000 00 00",
+    description: "Urgent delivery or launch coordination.",
+    icon: "Phone",
+    href: "tel:+905320000000",
+  },
+];
+
+export const faqs = [
+  {
+    question: "What is your typical engagement model?",
+    answer:
+      "Most projects run six to eight weeks with a fixed weekly rate that covers discovery through launch. I also support retained partnerships for ongoing experiments.",
+  },
+  {
+    question: "Do you join existing teams or work independently?",
+    answer:
+      "Both. I can embed with engineering, product, and design partners or own a contained initiative end-to-end with async rituals.",
+  },
+  {
+    question: "How soon can we start?",
+    answer:
+      "I reserve one active build track at a time. Reach out with context and I will share current availability plus a suggested kickoff date within a day.",
+  },
+];
+
+export const socialLinks = [
+  { label: "LinkedIn", icon: "Linkedin", href: "https://www.linkedin.com/in/aysekaya" },
+  { label: "GitHub", icon: "Github", href: "https://github.com/aysekaya" },
+  { label: "Case studies", icon: "ExternalLink", href: "/projects" },
+];

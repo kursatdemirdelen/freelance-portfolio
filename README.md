@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+﻿# Freelance Portfolio (Next.js 15)
 
-## Getting Started
+Modern, bileşen odaklı bir ürün mühendisliği portföyü. Vaka çalışmaları (projects), bölümler (sections) ve tek bir veri kaynağı (`src/app/data.js`) üzerinden içerik yönetimi sunar.
 
-First, run the development server:
+## Özellikler
+- Next.js App Router (15) + React 19
+- Tema değişimi ve CSS değişkenleriyle tutarlı tasarım
+- Proje listeleme ve dinamik detay sayfaları (`/projects`, `/projects/[slug]`)
+- Bölüm bazlı modüler mimari (Hero, Services, Experience, Testimonials vb.)
 
+## Kurulum ve Çalıştırma
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev    # geliştirici sunucusu (http://localhost:3000)
+npm run build  # üretim derlemesi
+npm start      # üretim sunucusu
+npm run lint   # lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## İçerik Düzenleme
+- Genel veriler: `src/app/data.js`
+  - `projects`: Proje/vaka içerikleri (slug, başlık, metrikler, etiketler...) 
+  - `projectCategories`: Kategori filtreleri
+  - `heroMetrics`, `services`, `skills`, `experiences`, `testimonials`, `contactChannels`, `faqs`, `socialLinks`
+- Sayfalar: `src/app`
+  - Anasayfa: `src/app/page.js`
+  - İletişim: `src/app/contact/page.js`
+  - Projeler: `src/app/projects/page.js`
+  - Proje detayı: `src/app/projects/[slug]/page.js`
+- Bileşenler: `src/components`
+  - Bölümler: `src/components/sections/*`
+  - Yerleşim: `src/components/layout/*`
+  - UI: `src/components/ui/*` (SectionHeader, PillButton, IconPill)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Kod Düzeni ve Stil
+- Ortak UI parçaları küçük bileşenlere ayrıldı (tekrar eden kod azaltıldı).
+- Kullanılmayan modüller temizlendi (ör. `Tag` bileşeni kaldırıldı, gereksiz ikon importları ayıklandı).
+- Görsel/asset: `src/app/favicon.ico` dışındaki görsellere ihtiyaç yoktur.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Notlar
+- ESLint uyarısı (Next.js plugin autodetect) biliniyor; mevcut yapı ile `npm run lint` hatasız çalışır.
+- Yeni proje eklemek için `src/app/data.js` içindeki `projects` listesine öğe ekleyin ve benzersiz `slug` verin.

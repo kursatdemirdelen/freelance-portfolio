@@ -28,7 +28,7 @@ export function TestimonialsSection() {
           Words from collaborators
         </span>
         <h2 className="text-3xl font-semibold text-[var(--foreground)] sm:text-4xl">
-          “Ayşe brings clarity, craft, and calm to every engagement.”
+          "Ayse brings clarity, craft, and calm to every engagement."
         </h2>
         <p className="text-pretty text-[--muted]">
           Teams repeatedly highlight the momentum, shared rituals, and long-term systems built together.
@@ -55,7 +55,7 @@ export function TestimonialsSection() {
         <footer className="mt-6 text-sm text-[--muted]">
           <p className="font-semibold text-[var(--foreground)]">{activeTestimonial.name}</p>
           <p>
-            {activeTestimonial.title} · {activeTestimonial.company}
+            {activeTestimonial.title} / {activeTestimonial.company}
           </p>
           <p className="mt-1 text-xs uppercase tracking-[0.3em]">
             {activeTestimonial.project}

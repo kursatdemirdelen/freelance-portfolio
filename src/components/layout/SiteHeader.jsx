@@ -35,7 +35,7 @@ export function SiteHeader({ onNavigate, onToggleTheme, theme }) {
             <span className="text-xs uppercase tracking-[0.32em] text-[--muted]">
               Product Engineer
             </span>
-            <span className="text-[var(--foreground)]">Ayşe Kaya</span>
+            <span className="text-[var(--foreground)]">Ayse Kaya</span>
           </span>
         </Link>
         <nav className="hidden items-center gap-8 text-sm font-medium text-[--muted] md:flex">

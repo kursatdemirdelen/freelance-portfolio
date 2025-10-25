@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Ayşe Kaya — Product Engineer Portfolio",
+  title: "Ayse Kaya - Product Engineer Portfolio",
   description:
     "Freelance product engineer crafting modern web applications, design systems, and marketing experiences.",
 };

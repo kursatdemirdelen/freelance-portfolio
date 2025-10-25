@@ -13,7 +13,7 @@ export function SiteFooter() {
     <footer className="mt-16 border-t border-[--accent-soft]/60 bg-[--surface]/80">
       <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-10 md:flex-row md:items-center md:justify-between md:px-8">
         <div className="space-y-2 text-sm text-[--muted]">
-          <p className="text-sm font-semibold text-[var(--foreground)]">Ayşe Kaya — Product Engineer</p>
+          <p className="text-sm font-semibold text-[var(--foreground)]">Ayse Kaya - Product Engineer</p>
           <p>Designing and building resilient web products from Istanbul.</p>
         </div>
         <div className="flex flex-wrap items-center gap-3">
