@@ -1,5 +1,23 @@
 export const heroMetrics = [
   {
+<<<<<<< HEAD
+    label: "Launched products",
+    value: "32",
+    description:
+      "Partnered with startups and scale-ups to deliver production-ready experiences that convert.",
+  },
+  {
+    label: "Average NPS",
+    value: "71",
+    description:
+      "Trusted as an embedded product partner with clear communication and rapid follow-through.",
+  },
+  {
+    label: "Prototype lead time",
+    value: "48h",
+    description:
+      "Clickable prototypes and usability tests within two days to keep momentum high.",
+=======
     label: "Projects shipped",
     value: "28+",
     description:
@@ -16,11 +34,44 @@ export const heroMetrics = [
     value: "72h",
     description:
       "Rapid iterations with design systems and component-driven development.",
+>>>>>>> origin/main
   },
 ];
 
 export const services = [
   {
+<<<<<<< HEAD
+    title: "Product discovery & direction",
+    icon: "Compass",
+    description:
+      "Translate fuzzy ideas into measurable outcomes with aligned vision, prioritized roadmaps, and customer insight loops.",
+    bullets: [
+      "Immersive stakeholder workshops",
+      "North-star metrics & guardrails",
+      "Rapid prototypes & validation",
+    ],
+  },
+  {
+    title: "Design systems & interfaces",
+    icon: "Layers",
+    description:
+      "Build cohesive systems that balance aesthetics with accessibility, performance, and maintainability across teams.",
+    bullets: [
+      "Design tokens & component kits",
+      "Hand-off ready documentation",
+      "Inclusive experience audits",
+    ],
+  },
+  {
+    title: "Delivery & launch acceleration",
+    icon: "Zap",
+    description:
+      "Ship resilient frontends with confident releases, instrumentation, and workflows tuned for continuous improvement.",
+    bullets: [
+      "Progressive enhancements",
+      "Automation & QA pipelines",
+      "Experimentation tooling",
+=======
     title: "Product Discovery & Strategy",
     icon: "🧭",
     description:
@@ -51,6 +102,7 @@ export const services = [
       "Progressive migrations",
       "Workflow automation",
       "Monitoring & observability",
+>>>>>>> origin/main
     ],
   },
 ];
@@ -118,6 +170,33 @@ export const experiences = [
 export const process = [
   {
     title: "Discover",
+<<<<<<< HEAD
+    icon: "Sparkles",
+    duration: "Week 1",
+    description:
+      "Clarify the problem space, map success metrics, and co-create a vision through collaborative workshops.",
+  },
+  {
+    title: "Design",
+    icon: "PenTool",
+    duration: "Weeks 2-3",
+    description:
+      "Prototype north-star flows, define UI foundations, and stress-test ideas with customers early.",
+  },
+  {
+    title: "Build",
+    icon: "Workflow",
+    duration: "Weeks 3-6",
+    description:
+      "Ship component-driven interfaces backed by clean architecture, automation, and documentation.",
+  },
+  {
+    title: "Launch & learn",
+    icon: "Gauge",
+    duration: "Week 6+",
+    description:
+      "Instrument the release, capture insights, and iterate with confidence using shared scorecards.",
+=======
     icon: "🔍",
     duration: "Week 1",
     description:
@@ -143,6 +222,7 @@ export const process = [
     duration: "Week 6+",
     description:
       "Deploy confidently, capture insights, and prioritize the next iteration with live analytics.",
+>>>>>>> origin/main
   },
 ];
 
@@ -282,3 +362,66 @@ export const availability = {
   responseTime: "Replies within 24 hours",
   location: "Based in Istanbul • Remote friendly",
 };
+<<<<<<< HEAD
+
+export const contactChannels = [
+  {
+    label: "Email",
+    description: "Share context about your product vision and receive a tailored response.",
+    value: "hello@aysekaya.dev",
+    href: "mailto:hello@aysekaya.dev",
+    icon: "Mail",
+  },
+  {
+    label: "Discovery call",
+    description: "Schedule a 30-minute fit call to explore collaboration opportunities.",
+    value: "Book via Calendly",
+    href: "https://calendly.com/ayse/intro",
+    icon: "CalendarClock",
+  },
+  {
+    label: "Signal",
+    description: "For ongoing partners, reach out directly on Signal for rapid collaboration.",
+    value: "+90 555 010 20 30",
+    href: "tel:+905550102030",
+    icon: "Phone",
+  },
+];
+
+export const socialLinks = [
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/aysekaya",
+    icon: "Linkedin",
+  },
+  {
+    label: "GitHub",
+    href: "https://github.com/aysekaya",
+    icon: "Github",
+  },
+  {
+    label: "Dribbble",
+    href: "https://dribbble.com/aysekaya",
+    icon: "ExternalLink",
+  },
+];
+
+export const faqs = [
+  {
+    question: "What types of projects are the best fit?",
+    answer:
+      "I partner with product-led teams shipping SaaS platforms, multi-market marketing sites, or mission-critical internal tools. Projects typically span 6–12 weeks with an option to extend.",
+  },
+  {
+    question: "Do you collaborate with existing teams?",
+    answer:
+      "Yes. I embed with your design, engineering, and product teammates to accelerate delivery, establish rituals, and build lasting systems.",
+  },
+  {
+    question: "What is your availability?",
+    answer:
+      "I’m currently booking for April 2025 project kickoffs and offer earlier discovery to prepare roadmaps and prototypes.",
+  },
+];
+=======
+>>>>>>> origin/main
