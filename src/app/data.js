@@ -1,5 +1,6 @@
 export const heroMetrics = [
   {
+<<<<<<< HEAD
     label: "Launched products",
     value: "32",
     description:
@@ -16,11 +17,30 @@ export const heroMetrics = [
     value: "48h",
     description:
       "Clickable prototypes and usability tests within two days to keep momentum high.",
+=======
+    label: "Projects shipped",
+    value: "28+",
+    description:
+      "From fast-moving SaaS teams to venture-backed marketing sites shipped end-to-end.",
+  },
+  {
+    label: "Avg. review score",
+    value: "4.9/5",
+    description:
+      "Clients consistently highlight clarity in communication and attention to detail.",
+  },
+  {
+    label: "Time to first prototype",
+    value: "72h",
+    description:
+      "Rapid iterations with design systems and component-driven development.",
+>>>>>>> origin/main
   },
 ];
 
 export const services = [
   {
+<<<<<<< HEAD
     title: "Product discovery & direction",
     icon: "Compass",
     description:
@@ -51,6 +71,38 @@ export const services = [
       "Progressive enhancements",
       "Automation & QA pipelines",
       "Experimentation tooling",
+=======
+    title: "Product Discovery & Strategy",
+    icon: "🧭",
+    description:
+      "Align business goals with user outcomes through roadmapping, prototyping, and measurable success metrics.",
+    bullets: [
+      "Journey mapping & KPI definition",
+      "Stakeholder workshops",
+      "Prioritized delivery roadmap",
+    ],
+  },
+  {
+    title: "Interface Engineering",
+    icon: "🎨",
+    description:
+      "Craft resilient design systems and accessible user interfaces that feel fast on every device.",
+    bullets: [
+      "Design system foundations",
+      "Performance-driven development",
+      "Accessibility audits",
+    ],
+  },
+  {
+    title: "Application Acceleration",
+    icon: "⚡",
+    description:
+      "Upgrade legacy frontends, integrate analytics, and automate workflows with modern web tooling.",
+    bullets: [
+      "Progressive migrations",
+      "Workflow automation",
+      "Monitoring & observability",
+>>>>>>> origin/main
     ],
   },
 ];
@@ -118,6 +170,7 @@ export const experiences = [
 export const process = [
   {
     title: "Discover",
+<<<<<<< HEAD
     icon: "Sparkles",
     duration: "Week 1",
     description:
@@ -143,6 +196,33 @@ export const process = [
     duration: "Week 6+",
     description:
       "Instrument the release, capture insights, and iterate with confidence using shared scorecards.",
+=======
+    icon: "🔍",
+    duration: "Week 1",
+    description:
+      "Uncover goals, map success metrics, and align stakeholders through structured workshops.",
+  },
+  {
+    title: "Design",
+    icon: "✏️",
+    duration: "Weeks 2-3",
+    description:
+      "Prototype flows, define UI tokens, and validate with users before committing to build.",
+  },
+  {
+    title: "Build",
+    icon: "🛠️",
+    duration: "Weeks 3-6",
+    description:
+      "Ship production-ready components, integrate data, and set up testing + observability.",
+  },
+  {
+    title: "Launch & Iterate",
+    icon: "🚀",
+    duration: "Week 6+",
+    description:
+      "Deploy confidently, capture insights, and prioritize the next iteration with live analytics.",
+>>>>>>> origin/main
   },
 ];
 
@@ -282,6 +362,7 @@ export const availability = {
   responseTime: "Replies within 24 hours",
   location: "Based in Istanbul • Remote friendly",
 };
+<<<<<<< HEAD
 
 export const contactChannels = [
   {
@@ -342,3 +423,5 @@ export const faqs = [
       "I’m currently booking for April 2025 project kickoffs and offer earlier discovery to prepare roadmaps and prototypes.",
   },
 ];
+=======
+>>>>>>> origin/main
